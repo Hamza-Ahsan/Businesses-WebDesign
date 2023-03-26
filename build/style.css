@@ -1,0 +1,443 @@
+/* <!-- Navbar Background Image --> */
+.navbar_backgroundImg {
+  box-shadow: inset 1pc 1pc 18pc rgba(0,0,0,0.9);
+}
+
+.navbar_backgroundImg img {
+  width: 100%;
+  object-fit: cover;
+  height: 65vh;
+  position: relative;
+  z-index: -2;
+}
+
+/* <!-- Navbar --> */
+
+.navbar-collapse {
+  justify-content: end;
+  color: #fff;
+}
+
+.navbar {
+  width: 100%;
+  position: absolute;
+  top: 2pc;
+}
+
+.container {
+  width: 70%;
+}
+
+.nav-link {
+  color: #fff;
+  font-variant: all-petite-caps;
+  margin: 0px 5px;
+}
+
+.dropdown-item {
+  font-variant: all-petite-caps;
+  color: white;
+}
+
+/* <!-- Boxes --> */
+.boxes {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 20pc;
+}
+
+.box_design {
+  width: 23%;
+  padding: 25px;
+  margin: 15px;
+  box-shadow: 0 0 5px gray;
+  background-color: #fff;
+}
+
+.box_design img {
+  width: 23%;
+  object-fit: contain;
+}
+
+.box_design h1 {
+  font-size: 20px;
+  padding-top: 15px;
+}
+
+.box_design p {
+  padding-top: 15px;
+  font-size: 15px;
+  text-align: justify;
+  color: gray;
+}
+
+.box_design button {
+  border: none;
+  background: none;
+  color: #000;
+}
+
+@media screen and (max-width: 680px) {
+  .box_design {
+    width: 30%;
+    padding: 15px;
+    margin: 5px;
+  }  
+  .box_design img {
+    width: 28%;
+    object-fit: contain;
+  }
+  
+  .box_design h1 {
+    font-size: 15px;
+    padding-top: 13px;
+    color: #000;
+  }
+  
+  .box_design p {
+    padding-top: 10px;
+    font-size: 10px;
+    text-align: justify;
+    color: gray;
+  }
+}
+
+
+/* <!-- Agency --> */
+.agency_container {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  padding-top: 25pc;
+  padding-bottom: 15pc;
+  margin: auto;
+}
+
+.agency_ouragency {
+  margin: 0pc 3pc;
+}
+
+.agency_container img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.agency_container h1 {
+  font-size: 23px;
+  margin-bottom: 33px;
+}
+
+.agency_whyus li {
+  list-style: none;
+}
+
+@media screen and (max-width: 680px) {
+  .agency_container {
+    width: 95%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20pc;
+    margin: auto;
+  } 
+}
+
+/* <!-- Numbber of Data --> */
+.number_data {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgb(236, 236, 236);
+  padding: 2pc 0px;
+}
+
+.number_data h2 {
+  text-align: center;
+  color: #0389FF;
+}
+
+.number_data p {
+  font-size: 12px;
+  font-variant: all-petite-caps;
+}
+
+/* <!-- Leadership Conatiner --> */
+.leadership {
+  width: 70%;
+  margin: auto;
+  padding: 5pc 0pc;
+}
+.leadership h1 {
+  text-align: center;
+  margin-bottom: 3pc;
+  font-size: 22px;
+}
+
+.leadership_boxes {
+  display: flex;
+  justify-content: center;
+}
+
+.leadership_person {
+  margin: 0px 1pc;
+}
+
+.leadership_person img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.leadership_bio {
+  width: 90%;
+  margin: auto;
+  padding: 25px;
+  background-color: #fff;
+  position: relative;
+  top: -5pc;
+  box-shadow: 0 0 5px gray;
+}
+.leadership_bio h3 {
+  font-size: 15px;
+  font-weight: bold;
+}
+.leadership_bio p {
+  margin-top: 1pc;
+  font-size: 13px;
+  font-variant: all-petite-caps;
+}
+
+@media screen and (max-width: 680px) {
+  .leadership {
+    width: 80%;
+  }
+  .leadership_bio {
+    width: 89%;
+    padding: 14px;
+    position: relative;
+    top: -2pc;
+  }
+  .leadership_bio h3 {
+    font-size: 12px;
+  }
+  .leadership_bio p {
+    margin-top: 1pc;
+    font-size: 10px;
+  }
+}
+
+/* <!-- Customer Review --> */
+.customer {
+  text-align: center;
+}
+
+.customer h4 {
+  font-size: 22px;
+}
+.icon {
+  margin: 2pc 0pc;
+}
+
+.bg-secondary {
+  position: relative;
+  top: -5pc;
+  border-radius: 20px;
+}
+
+.carousel-item p {
+  width: 50%;
+  text-align: center;
+  margin: auto;
+}
+
+.carousel-item h5 {
+  margin-top: 15px;
+  font-size: 14px;
+  padding-bottom: 8pc;
+}
+
+@media screen and (max-width: 680px) {
+  .carousel-item p {
+    width: 70%;
+    text-align: center;
+    margin: auto;
+  } 
+}
+
+
+/* <!-- Services --> */
+.services {
+  padding: 5pc 0pc;
+  text-align: center;
+  background-color: rgb(236, 236, 236);
+  align-items: center;
+}
+
+.services h6 {
+  font-size: 24px;
+}
+
+.services_option {
+  width: 70%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.services_option div {
+  margin: 0pc 1pc;
+}
+
+.services_option img {
+  margin-top: 3pc;
+  width: 20%;
+}
+
+.services_option h6 {
+  margin-top: 15px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.services_option p {
+  font-size: 14px;
+  color: gray;
+}
+
+.services button {
+  margin-top: 4pc;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  font-variant: all-petite-caps;
+}
+
+@media screen and (max-width: 680px) {
+  .services_option {
+    width: 88%;
+    margin: auto;
+  } 
+  .services_option img {
+    width: 30%;
+  }
+}
+
+/* <!-- Blog Container --> */
+.blog {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  margin-top: 5pc;
+}
+
+.blog h6 {
+  font-size: 25px;
+}
+
+.blog p {
+  width: 60%;
+  margin: auto;
+  color: gray;
+  font-size: 15px;
+}
+
+.blog_images {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin: 5pc 0pc;
+}
+
+.blog_images img {
+  width: 100%;
+  object-fit: contain;
+}
+
+/* <!-- Footer --> */
+.footer {
+  padding: 5pc;
+  background-color: rgb(236, 236, 236);
+}
+
+.footer_menu {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 0pc 5pc;
+}
+
+.footer_menu div {
+  padding: 0pc 5px;
+}
+
+.footer li {
+  list-style: none;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.footer h4 {
+  font-size: 15px;
+  font-variant: all-petite-caps;
+  color: gray;
+}
+
+.footer_about {
+  width: 30%;
+}
+
+.footer_about p {
+  font-size: 13px;
+  text-align: justify;
+  color: gray;
+}
+
+.footer_line {
+  text-align: center;
+  margin-top: 5pc;
+  font-size: 14px;
+  color: gray;
+}
+
+.footer_connectIcon {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 680px) {
+  .footer {
+    padding: 4pc 0pc;
+  }
+  
+  .footer_menu {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0pc 1pc;
+  }
+  
+  .footer_menu div {
+    padding: 0pc 5px;
+  }
+  
+  .footer li {
+    font-size: 12px;
+  }
+  
+  .footer h4 {
+    font-size: 14px;
+  }
+  
+  .footer_about {
+    width: 25%;
+  }
+  
+  .footer_about p {
+    font-size: 12px;
+    text-align: start;
+  }
+
+  .footer_line {
+    margin-top: 2.5pc;
+  }
+}

@@ -1,89 +1,314 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
-
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/9.18.0/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/9.18.0/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/9.18.0/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/9.18.0/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/9.18.0/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/9.18.0/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/9.18.0/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/9.18.0/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/9.18.0/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/9.18.0/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
-
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Businesses Webdesign For smooth growing </title>
   </head>
   <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+
+    <!-- Navbar Background Image -->
+    <div class="navbar_backgroundImg">
+      <img src="images/hero_1.jpg.webp" alt="">
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" style="color: #fff;" href="#">HumanResources</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Services
+                </a>
+                <ul class="dropdown-menu bg-transparent ">
+                  <li><a class="dropdown-item" href="#">HR Consulting</a></li>
+                  <li><a class="dropdown-item" href="#">Leadership Training</a></li>
+                  <li><a class="dropdown-item" href="#">HR Management</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
+
+
+
+    <!-- Boxes -->
+    <div class="boxes">
+        <div class="box_design">
+            <img src="icons/001-consultation.svg" alt="icon">
+            <h1>Corporate Collabration</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. laudantium eligendi doloremque aperiam, accusantium temporibus.</p>
+            <button>Learn more</button>
+        </div>
+        <div class="box_design">
+            <img src="icons/002-discussion.svg" alt="icon">
+            <h1>Corporate Collabration</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. laudantium eligendi doloremque aperiam, accusantium temporibus.</p>
+            <button>Learn more</button>
+        </div>
+        <div class="box_design">
+            <img src="icons/003-turnover.svg" alt="icon">
+            <h1>Corporate Collabration</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. laudantium eligendi doloremque aperiam, accusantium temporibus.</p>
+            <button>Learn more</button>
+        </div>
+    </div>
+
+    <!-- Agency -->
+    <div class="agency_container">
+      <div class="agency_ouragency">
+        <h1>Our Agency</h1>
+        <img src="images/slider-1.jpg.webp" alt="agency">
+      </div>
+      <div class="agency_whyus">
+        <h1>Why Us?</h1>
+        <li>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, commodi accusamus. Atque enim modi minus eaque neque expedita porro inventore doloremque, quae accusamus illo odit, ad numquam rem accusantium soluta.</p>
+        </li>
+        <li>+</li>
+        <li>+</li>        
+      </div>
+    </div>
+
+
+    <!-- Numbber of Data -->
+    <div class="number_data">
+      <div>
+        <h2>85,944</h2>
+        <p>Number of Clients</p>
+      </div>
+      <div>
+        <h2>85,944</h2>
+        <p>Number of Personnel</p>
+      </div>
+      <div>
+        <h2>85,944</h2>
+        <p>Years of Experience</p>
+      </div>
+    </div>
+
+
+    <!-- Leadership Conatiner -->
+    <div class="leadership">
+      <h1>The Leadership</h1>
+
+      <div class="leadership_boxes">
+        <!-- Person 1 -->
+        <div class="leadership_person">
+          <img src="images/person_1.jpg.webp" alt="">
+          <div class="leadership_bio">
+            <h3>BOB MILLER</h3>
+            <p>CEO And CO-FOUNDER</p>
+          </div>
+        </div>
+  
+        <!-- Person 2 -->
+        <div class="leadership_person">
+          <img src="images/person_2.jpg.webp" alt="">
+          <div class="leadership_bio">
+            <h3>JEAN SMITH</h3>
+            <p>CEO And CO-FOUNDER</p>
+          </div>
+        </div>
+  
+        <!-- Person 3 -->
+        <div class="leadership_person">
+          <img src="images/person_3.jpg.webp" alt="">
+          <div class="leadership_bio">
+            <h3>DAVID WILSON</h3>
+            <p>CEO And CO-FOUNDER</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Customer Review -->
+    <div class="customer">
+      <h4>Happy Customers</h4>
+      <!-- Quote icon -->
+      <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-quote" viewBox="0 0 16 16">
+        <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"/>
+      </svg>
+
+      <div>
+
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active bg-secondary" aria-current="false" aria-label="Slide 1"></button>
+            <button type="button" class="bg-secondary" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" class="bg-secondary" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, doloremque suscipit aliquam temporibus aliquid provident reiciendis possimus explicabo facere quibusdam odio laboriosam, beatae et illo. Doloribus at ex alias saepe.</p>
+              <h5>Craig, CEO and Founder of Site</h5>
+            </div>
+            <div class="carousel-item">
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, doloremque suscipit aliquam temporibus aliquid provident reiciendis possimus explicabo facere quibusdam odio laboriosam, beatae et illo. Doloribus at ex alias saepe.</p>
+              <h5>Craig, CEO and Founder of Site</h5>
+            </div>
+            <div class="carousel-item">
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, doloremque suscipit aliquam temporibus aliquid provident reiciendis possimus explicabo facere quibusdam odio laboriosam, beatae et illo. Doloribus at ex alias saepe.</p>
+              <h5>Craig, CEO and Founder of Site</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+    <!-- Services -->
+    <div class="services">
+      <h6>Our Services</h6>
+
+      <div class="services_option">
+        <div>
+          <img src="icons/004-gear.svg" alt="">
+          <h6>Regular Update</h6>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam modi totam praesentium, Iure cupiditate.</p>
+        </div>
+        <div>
+          <img src="icons/005-conflict.svg" alt="">
+          <h6>Infinite Posibilities</h6>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam modi totam praesentium, Iure cupiditate.</p>
+        </div>
+        <div>
+          <img src="icons/006-meeting.svg" alt="">
+          <h6>Good Security</h6>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam modi totam praesentium, Iure cupiditate.</p>
+        </div>
+        <div>
+          <img src="icons/007-brainstorming.svg" alt="">
+          <h6>HR Management</h6>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam modi totam praesentium, Iure cupiditate.</p>
+        </div>
+        <div>
+          <img src="icons/003-turnover.svg" alt="">
+          <h6>Intuitive Thinking</h6>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam modi totam praesentium, Iure cupiditate.</p>
+        </div>
+        <div>
+          <img src="icons/007-brainstorming.svg" alt="">
+          <h6>Play Video</h6>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam modi totam praesentium, Iure cupiditate.</p>
+        </div>
+      </div>
+
+      <button>More Features</button>
+    </div>
+
+
+    <!-- Blog Container -->
+    <div class="blog">
+      <h6>Our Blog</h6>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, rem hic nisi excepturi consequuntur, sequi iure.</p>
+
+      <div class="blog_images">
+        <img src="images/slider-2.jpg.webp" alt="2">
+        <img src="images/slider-1.jpg.webp" alt="1">
+        <img src="images/slider-3.jpg.webp" alt="3">
+        <img src="images/slider-4.jpg.webp" alt="4">
+      </div>
+    </div>
+
+
+    <!-- Footer -->
+    <div class="footer">
+
+      <div class="footer_menu">
+
+        <div class="footer_about">
+          <h4>About</h4>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis quisquam nulla tenetur quod! excepturi?</p>
+        </div>
+  
+        <div>
+          <h4>Learn More</h4>
+            <li>How it works?</li>
+            <li>Useful tools</li>
+            <li>Pricing</li>
+            <li>Stremap</li>
+        </div>
+  
+        <div>
+          <h4>Support</h4>
+            <li>FAQ</li>
+            <li>Contact Us</li>
+            <li>Help Desk</li>
+            <li>Knowledgebase</li>
+        </div>
+  
+        <div>
+          <h4>About Us</h4>
+            <li>About Us</li>
+            <li>Careers</li>
+            <li>Term of Services</li>
+            <li>Privacy Policy</li>
+        </div>
+  
+        <div>
+          <h4>Connect with Us</h4>
+          <div class="footer_connectIcon">
+            <li>
+              <!-- Facebook Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+              </svg>
+            </li>
+            <li>
+              <!-- Twitter Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+              </svg>
+            </li>
+            <li>
+              <!-- Github Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+              </svg>
+            </li>
+          </div>
+        </div>
+      </div>
+
+      <p class="footer_line">
+        Copyright <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-c-circle" viewBox="0 0 16 16">
+          <path d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM8.146 4.992c-1.212 0-1.927.92-1.927 2.502v1.06c0 1.571.703 2.462 1.927 2.462.979 0 1.641-.586 1.729-1.418h1.295v.093c-.1 1.448-1.354 2.467-3.03 2.467-2.091 0-3.269-1.336-3.269-3.603V7.482c0-2.261 1.201-3.638 3.27-3.638 1.681 0 2.935 1.054 3.029 2.572v.088H9.875c-.088-.879-.768-1.512-1.729-1.512Z"/>
+        </svg> 2023 All rights rederved
+      </p>
+  </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
